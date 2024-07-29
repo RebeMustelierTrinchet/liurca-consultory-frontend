@@ -1,0 +1,43 @@
+.contenedorPrincipal{
+    margin-top:5px;
+    margin-bottom: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100% !important;
+}
+
+.contAccordion{
+    width: 1200px;
+}
+
+button {
+    margin: 3px;
+    
+    font-family: Berlin Sans FB !important;
+}
+
+.accordionItem{
+    margin-bottom: 20px !important;
+    border: 2px solid var(--verde) !important;
+    opacity: 1 !important;
+    border-radius: 20px !important;
+}
+
+.contAccordion:focus .accordionItem{
+    background-color: aqua !important;
+}
+
+
+@media all and (max-width: 700px){
+    .contenedorPrincipal{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    .contAccordion{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+}

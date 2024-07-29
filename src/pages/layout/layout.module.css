@@ -1,0 +1,17 @@
+.body{
+    overflow: hidden;
+}
+
+.conteiner{
+    background-color: rgba(238, 109, 109, 0.099);
+    padding: 50px;
+    margin-top: 70px;
+}
+
+
+@media all and (max-width: 700px){
+    .conteiner{  
+        padding: 0px;
+    }
+
+}

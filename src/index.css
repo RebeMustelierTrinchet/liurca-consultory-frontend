@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.accordion-button{
+  background-color: transparent !important;
+  color: var(--blue)!important;
+  opacity: 1 !important;
+  /* margin-bottom: 20px !important; */
+}
+
+.accordion-button:focus{
+  /* background-color: blue !important; */
+  /* border: 2px solid green !important; */
+  box-shadow: none !important;
+  color: var(--blue) !important;
+}
+.accordion-item {
+  color: var(--blue) !important;
+  opacity: 1 !important;
+}
+
+

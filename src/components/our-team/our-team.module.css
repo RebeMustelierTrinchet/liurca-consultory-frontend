@@ -1,0 +1,51 @@
+.ourTeam {
+    padding: 40px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    border: 3px solid var(--red);
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00274d;
+}
+
+.member {
+    margin: 20px 0;
+    display: flex;
+}
+
+.photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2px solid var(--red);
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00274d;
+}
+
+.education, .certification {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+.bio {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.info__conteiner{
+    text-align: start;
+    margin-left: 20px;
+}

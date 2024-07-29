@@ -1,0 +1,114 @@
+.text{
+    color:var(--blue)!important;
+    z-index: 1;
+    opacity: 1.5 !important;
+    position: relative;
+    margin-top: 20px;
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    
+}
+
+.mainCont{
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 3px solid var(--blue);
+}
+
+.author{
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: var(--dorado) !important;
+    font-family: Georgia, serif;
+    font-size: medium;
+    /* margin-top: 30px; */
+    position: relative;
+    z-index: 1;
+    
+}
+.swiperSlide{
+   
+    /* height: 230px; */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.comments__container{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    /* justify-content: flex-start; */
+    width:65%;
+    min-width: 500px;
+    height: auto;
+}
+
+.title{
+    text-transform: uppercase;
+    color: var(--dorado);
+    font-family: Georgia, serif;
+    font-size: medium;
+    /* margin-top: 25px; */
+}
+
+.subtitle{
+    color: var(--verde);
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+    font-size:large;
+    margin-top: 10;
+}
+
+
+@media all and (max-width: 700px){
+    .mainCont{
+        padding: 0;
+        border-bottom: 3px solid var(--verde);
+        /* text-align: start; */
+    }
+    .comments__container{
+        margin-top: -20px;
+        /* background-color: bisque; */
+        padding: 3px;
+        width: 100%;
+        
+    }
+    .text{
+        margin-right: 0 !important;
+        width: 70%;
+        font-size: 15px;
+        text-align: center;
+        /* background-color: aqua; */
+        padding: 0;
+        
+        text-align:start;
+    }
+    .swiperSlide{
+        padding: 20px 0px;
+        width: 100%;
+        /* overflow: visible; */
+        /* background-color: blue; */
+    }
+    .swiper__container{
+        width: 95%;
+        /* background-color: brown; */
+    }
+    .title{
+        margin-top: 20px;
+    }
+
+    .author{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+    }
+    
+}
