@@ -106,19 +106,19 @@ const services = {
       }
     ]
   },
-  serviciosDeRealtor: {
-    title: "Servicios de Realtor",
+  segurosDeVidaYSaludObamacare: {
+    title: "Seguros de Vida y Salud Obamacare",
     description: [
       {
         type: "Servicios",
-        text: "Ofrecemos asistencia en la compra, venta y alquiler de propiedades. Esto incluye la búsqueda de propiedades adecuadas, negociación de contratos, y asesoramiento en todo el proceso de transacción inmobiliaria."
+        text: "Ofrecemos asesoramiento y asistencia en la inscripción a seguros de vida y salud bajo el programa Obamacare. Esto incluye la evaluación de las necesidades de cobertura, la selección del plan adecuado, y el apoyo en el proceso de inscripción."
       },
       {
         type: "Beneficios",
-        text: "Aproveche nuestro conocimiento del mercado inmobiliario para encontrar la mejor propiedad o el comprador ideal para su inmueble, y asegúrese de que todas las transacciones se realicen de manera eficiente y legal."
+        text: "Aproveche nuestro conocimiento de los programas de seguros y las regulaciones para obtener la mejor cobertura disponible a través de Obamacare, garantizando así la protección financiera y de salud para usted y su familia."
       }
     ]
-  }
+  },
 };
 
 export default function Services() {

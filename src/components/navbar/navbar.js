@@ -24,7 +24,7 @@ const NavBar = () => {
           <li><a href="/">Home</a></li>
           <li><a href="/faqs">FAQ</a></li>
           <li><a href="/services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
         <div className={styles.socialMedia}>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook size={30} /></a>

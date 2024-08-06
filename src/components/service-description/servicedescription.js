@@ -86,8 +86,8 @@ const item = [
 export default function Work__Process(){
     return(
         <div className={styles.main__conteiner}>
-             <h2 className={styles.title}>{'< How We Work >'}</h2>
-            <h3 className={styles.subtitle}>Our Commitment: Transparency and Satisfaction in Every Step of the Process</h3>
+             <h2 className={styles.title}>{'< Como Trabajamos >'}</h2>
+            <h3 className={styles.subtitle}>Nuestro Compromiso: Claridad y Satisfacción en Cada Etapa del Proceso</h3>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={20}

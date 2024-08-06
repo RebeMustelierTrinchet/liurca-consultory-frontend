@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/home/home';
 import Faqs from './pages/faq/faq';
 import Services from './pages/services/services';
+import Contact from './pages/contact/contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,9 +20,8 @@ root.render(
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/faqs" element={<Faqs/>} />
           <Route exact path="/services" element={<Services/>} />
-          {/* <Route exact path="/gallery" element={<Gallery/>} />
-          <Route exact path="/contact" element={<Contact_Us/>} />
-          <Route exact path="/service/:id" element={<Service_details />} /> */}
+          <Route exact path="/contact" element={<Contact/>} />
+          {/* <Route exact path="/service/:id" element={<Service_details />} /> */}
         </Routes>
       </Layout>
   </Router>,

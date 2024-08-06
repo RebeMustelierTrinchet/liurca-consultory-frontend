@@ -1,7 +1,7 @@
 .main__conteiner{
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    min-height: 80vh;
     padding: 70px;
     background-color: #0C1F34;
     margin-bottom: 30px;
@@ -34,4 +34,33 @@
     font-size: 20px;
     font-family: serif;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .sub__conteiner{
+        flex-direction: column-reverse; 
+        align-items: center; 
+        text-align: center; 
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .logo_image{
+        min-width: 97%;
+        border: 3px solid white;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 28px; 
+    }
+
+    .text {
+        font-size: 16px;
+        text-align: start;
+    }
+
+    p span{
+        margin-right: 15px;
+    }
 }
