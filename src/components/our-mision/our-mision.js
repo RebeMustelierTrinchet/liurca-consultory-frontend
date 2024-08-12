@@ -1,4 +1,5 @@
 import styles from "./our-mision.module.css"
+import { useEffect, useRef } from 'react';
 
 export default function Our__Mision(){
     
@@ -33,14 +34,35 @@ export default function Our__Mision(){
         }
     ]
     
-      
+    const refValues = useRef([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = `${index * 0.3}s`;
+                    entry.target.classList.add(styles.animate);
+                }
+            });
+        }, { threshold: 0.1 }); // Puedes ajustar el threshold si es necesario
+
+        refValues.current.forEach(el => {
+            if (el) observer.observe(el);
+        });
+
+        return () => {
+            refValues.current.forEach(el => {
+                if (el) observer.unobserve(el);
+            });
+        };
+    }, []);
       
       
     return(
         <div className={styles.main__conteiner}>
             <div className={styles.mision}>
                 <h3>La Misión que Nos Define</h3>
-                <p>En Liurca Consultoría Fiscal, nuestra misión es proporcionar servicios de consultoría fiscal y legal de la más alta calidad 
+                <p>En Liurka Consultoría Fiscal, nuestra misión es proporcionar servicios de consultoría fiscal y legal de la más alta calidad 
                     con un enfoque personalizado. Nos dedicamos a ofrecer soluciones efectivas y transparentes que maximicen los beneficios y
                     cumplan con las necesidades específicas de nuestros clientes. Nuestro objetivo es ser un socio confiable en la gestión de 
                     impuestos y asuntos legales, garantizando la satisfacción total a través de un servicio profesional y ético.</p>
@@ -49,7 +71,10 @@ export default function Our__Mision(){
                 <h3>Valores que Impulsan Nuestro Éxito</h3>
                 <div className={styles.values}>
                     {valores.map((item, index) => (
-                        <div className={styles.values_text}>
+                        <div className={styles.values_text}
+                        key={index} 
+                        ref={el => refValues.current[index] = el}
+                    >
                             <h6>{item.valor}:</h6>
                             <p>{item.text}</p>
                         </div>

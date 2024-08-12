@@ -5,11 +5,11 @@ import avatar from './../../images/WhatsApp Image 2024-07-21 at 11.54.12.jpeg'
 export default function OurTeam() {
     return (
         <div className={styles.ourTeam}>
-            <h2 className={styles.title}>Conoce a Liurca</h2>
+            <h2 className={styles.title}>Conoce a Liurka</h2>
             <div className={styles.member}>
-                <img src={avatar} alt="Liurca" className={styles.photo} />
+                <img src={avatar} alt="Liurka" className={styles.photo} />
                 <div className={styles.info__conteiner}>
-                    <h3 className={styles.name}>Liurca</h3>
+                    <h3 className={styles.name}>Liurka</h3>
                     <p className={styles.education}>Título: Federal Tax School</p>
                     <p className={styles.certification}>Certificación: Notary Public Commission en Texas</p>
                     <p className={styles.bio}>

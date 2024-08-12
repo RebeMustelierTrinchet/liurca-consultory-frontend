@@ -13,11 +13,11 @@ export default function Home(){
             <Home_Header/>
             <Hero_Section/>
             <Work__Process/>
-            <h2>Sobre Liurca Consultoría Fiscal</h2>
+            <h2 className={styles.title}>Sobre Liurka Consultoría Fiscal</h2>
             <Our__History/>
             <OurTeam/>
-            <Comments/>
             <Our__Mision/>
+            <Comments/>
             
         </div>
     )

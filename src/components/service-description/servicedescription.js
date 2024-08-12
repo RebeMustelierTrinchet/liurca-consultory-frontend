@@ -103,8 +103,8 @@ export default function Work__Process(){
                     slidesPerView: 2,
                     spaceBetween: 20,
                   },
-                  768: {
-                    slidesPerView: 3,
+                  850: {
+                    slidesPerView: 2,
                     spaceBetween: 40,
                   },
                   1024: {
@@ -120,8 +120,8 @@ export default function Work__Process(){
                        <div className={styles.backgrond__container}></div>
                         <div className={styles.card__container}>
                             <div className={styles.header}>
-                                <Card.Text className={styles.title}>{'<Liurca Fiscal Consultancy>'}</Card.Text>
-                                <Card.Title className={styles.subtitle}>{item.title}</Card.Title>
+                                <Card.Text className={styles.card__title}>{'<Liurka Fiscal Consultancy>'}</Card.Text>
+                                <Card.Title className={styles.card__subtitle}>{item.title}</Card.Title>
                             </div>
                             <Card className={styles.sub__card__container}>
                                 <Card.Body>

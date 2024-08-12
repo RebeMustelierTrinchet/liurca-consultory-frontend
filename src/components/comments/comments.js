@@ -37,7 +37,7 @@ export default function Comments() {
         {comentarios.map((item, index) => (
           <SwiperSlide key={index} className={styles.swiperSlide}> 
             <div className={styles.comments__container}>
-                <div>estrellas</div>
+                {/* <div>estrellas</div> */}
               <p className={styles.text}>{item.text}</p>
               <p className={styles.author}>{item.author}</p>
             </div>  

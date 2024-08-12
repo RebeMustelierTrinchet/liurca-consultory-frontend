@@ -13,15 +13,18 @@
     flex-direction: row;
     margin-top: 40px;
     align-items: center;
+    flex-wrap: wrap-reverse;
 }
 
 .logo_image{
-    min-width: 500px;
+    min-width: 300px;
     width: 45%;
 }
 
 .text{
     font-size: 20px;
+    min-width: 300px;
+    width: 55%;
 }
 
 .title{
@@ -36,9 +39,9 @@
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .sub__conteiner{
-        flex-direction: column-reverse; 
+        /* flex-direction: column-reverse;  */
         align-items: center; 
         text-align: center; 
         width: 100%;
@@ -58,6 +61,7 @@
     .text {
         font-size: 16px;
         text-align: start;
+        min-width: 100%;
     }
 
     p span{

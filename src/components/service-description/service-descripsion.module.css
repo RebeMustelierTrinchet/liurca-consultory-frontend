@@ -1,8 +1,13 @@
 .subtitle{
     color: var(--blue)!important;
-    font-size: 17px;
+    font-size: 20px;
+    text-align: center;
+    font-family: Georgia, serif;
 }
 
+.main__conteiner{
+    margin-bottom: 30px;
+}
 
 .mySwiper {
     width: 100%;
@@ -33,23 +38,33 @@ display: flex;
 flex-direction: column;
 width: 380px;
 overflow: hidden;
-margin: auto;
+padding: 0 !important;
+height: 100%;
 }
 
 .header{
 width: 100%;
-height: 100px;
+height: 90px !important;
 position: relative;
 border-bottom: 2px solid var(--red);
+margin-top: 0 !important;
 }
 
 
 .sub__card__container{
 background-color: transparent !important;
 margin-top: 20px;
+min-height: 200px;
 }
 
 .title{
+    font-size: 35px !important;
+    text-align: center;
+}
+
+.title,
+.card__title
+{
 color: var(--red) !important;
 text-transform: capitalize;
 font-size: 18px;
@@ -95,22 +110,24 @@ opacity: 0.7;
 }
 
 
-.title{
-    text-transform: uppercase;
-    color: #FEDB97;
-    font-family: Georgia, serif;
-    font-size: medium;
-    margin-top: 15px;
-}
-
-.subtitle{
+.card__subtitle{
     text-transform: uppercase;
     font-family: Georgia, serif;
-    font-size:large;
+    font-size:16px;
+    color:white
 }
-
+.card__title{
+    margin-top: 10px ;
+}
 .text{
     color:white;
+}
+
+.more_info_button{
+    margin-bottom: 20px !important;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media all and (max-width: 700px){
@@ -128,6 +145,13 @@ opacity: 0.7;
     font-size: 18;
     font-weight:initial;
 }
+.main__conteiner{
+    padding: 10px;
+    text-align: center;
+}
 
+.more_info_button{
+
+}
 
 }
