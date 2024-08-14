@@ -13,6 +13,7 @@
   .contactInfo {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
     align-items: center;
     padding: 20px;
     border: 3px solid #71c3e6;
@@ -92,3 +93,9 @@
     background-color: #5aa4d1;
   }
   
+  @media all and (max-width: 700px){
+    .contactImage{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

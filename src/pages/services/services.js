@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./services.module.css";
+import { useEffect, useRef } from 'react';
 
 const services = {
   impuestosPersonalesYDeNegocios: {
@@ -120,6 +121,8 @@ const services = {
     ]
   },
 };
+
+
 
 export default function Services() {
   return (
