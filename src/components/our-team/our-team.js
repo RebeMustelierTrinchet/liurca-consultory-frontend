@@ -13,7 +13,7 @@ export default function OurTeam() {
                     <p className={styles.education}>Título: Federal Tax School</p>
                     <p className={styles.certification}>Certificación: Notary Public Commission en Texas</p>
                     <p className={styles.bio}>
-                        Con un título en Federal Tax School y una certificación de Notary Public Commission en Texas, Liurca cuenta con una sólida experiencia en el campo fiscal y legal. 
+                        Con un título en Federal Tax School y una certificación de Notary Public Commission en Texas, Liurka cuenta con una sólida experiencia en el campo fiscal y legal. 
                         Su compromiso con la excelencia y la atención personalizada la convierte en una profesional de confianza para manejar todas sus necesidades fiscales y legales.
                     </p>
                 </div>

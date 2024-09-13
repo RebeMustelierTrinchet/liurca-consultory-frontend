@@ -15,7 +15,7 @@ export default function Our__History(){
                 </p>
             </div>
             <div>
-                <button className={styles.btn_contac_us}>Go Services</button>
+                <button className={styles.btn_contac_us}><a href="/services" className={styles.link}>Servicios</a></button>
             </div>
         </div>
     )

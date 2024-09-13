@@ -62,7 +62,7 @@ export default function Our__Mision(){
         <div className={styles.main__conteiner}>
             <div className={styles.mision}>
                 <h3>La Misión que Nos Define</h3>
-                <p>En Liurka Consultoría Fiscal, nuestra misión es proporcionar servicios de consultoría fiscal y legal de la más alta calidad 
+                <p>En Liurka Infinity, nuestra misión es proporcionar servicios de consultoría fiscal y legal de la más alta calidad 
                     con un enfoque personalizado. Nos dedicamos a ofrecer soluciones efectivas y transparentes que maximicen los beneficios y
                     cumplan con las necesidades específicas de nuestros clientes. Nuestro objetivo es ser un socio confiable en la gestión de 
                     impuestos y asuntos legales, garantizando la satisfacción total a través de un servicio profesional y ético.</p>

@@ -6,7 +6,7 @@ export default function Home_Header(){
     return(
         <div className={styles.main__conteiner}>
             <div className={styles.right__conteiner}>
-                <h1 className={styles.title}>LiurKa Consultoría Fiscal</h1>
+                <h1 className={styles.title}>LiurKa Infinity</h1>
                 <p className={styles.subtitle}>Aseguramos Tu Éxito Financiero con Servicios Contables y Legales de Primera Clase</p>
                 <p className={styles.subtitle}>Por razones legales y normativas, nos vemos en la obligación de informar que no ofrecemos asesoría legal en ningún ámbito.</p>
                 <div className={styles.socialMedia}>

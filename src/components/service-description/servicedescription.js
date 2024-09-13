@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 
 const item = [
@@ -15,7 +16,7 @@ const item = [
         process_first: "Maximizamos tus beneficios fiscales y aseguramos el cumplimiento con todas las regulaciones vigentes.",
         process_second_title: "Preparación y Presentación: ",
         process_second: "Nos encargamos de todo el proceso de preparación y presentación de impuestos.",
-        url: "/impuestos"
+        url: "service-details/impuestos"
     },
     {
         title: "Aperturas de compañía",
@@ -23,7 +24,7 @@ const item = [
         process_first: "Te ayudamos a elegir la estructura legal adecuada para tu negocio.",
         process_second_title: "Documentación: ",
         process_second: "Nos encargamos de la presentación de todos los documentos necesarios para la constitución de tu empresa.",
-        url: "/aperturas"
+        url: "service-details/aperturas"
     },
     {
         title: "Asilo político (I-220A y parole)",
@@ -31,7 +32,7 @@ const item = [
         process_first: "Asistimos en la solicitud de asilo político y permisos de entrada humanitaria.",
         process_second_title: "Documentación: ",
         process_second: "Proporcionamos orientación y apoyo en la preparación de la documentación requerida.",
-        url: "/asilo"
+        url: "service-details/asilo"
     },
     {
         title: "Residencia permanente",
@@ -39,7 +40,7 @@ const item = [
         process_first: "Te ayudamos en la preparación de todos los formularios necesarios para la residencia permanente.",
         process_second_title: "Representación: ",
         process_second: "Te representamos ante las autoridades migratorias durante todo el proceso.",
-        url: "/residencia"
+        url: "service-details/residencia"
     },
     {
         title: "Permiso de empleo",
@@ -47,7 +48,7 @@ const item = [
         process_first: "Facilitamos la obtención de permisos de trabajo en Estados Unidos.",
         process_second_title: "Cumplimiento de Requisitos: ",
         process_second: "Aseguramos que cumplas con todos los requisitos y plazos necesarios.",
-        url: "/permiso-empleo"
+        url: "service-details/permiso-empleo"
     },
     {
         title: "Ciudadanía americana",
@@ -55,7 +56,7 @@ const item = [
         process_first: "Te preparamos para el examen de ciudadanía americana.",
         process_second_title: "Asistencia en la Entrevista: ",
         process_second: "Proveemos asistencia durante la entrevista de naturalización.",
-        url: "/ciudadania"
+        url: "service-details/ciudadania"
     },
     {
         title: "Reclamaciones familiares",
@@ -63,7 +64,7 @@ const item = [
         process_first: "Asistimos en la presentación de peticiones para la reunificación familiar.",
         process_second_title: "Proceso Eficiente: ",
         process_second: "Garantizamos un proceso eficiente y sin contratiempos.",
-        url: "/reclamaciones"
+        url: "service-details/reclamaciones"
     },
     {
         title: "Solicitud ITIN",
@@ -71,7 +72,7 @@ const item = [
         process_first: "Facilitamos la obtención del Número de Identificación Personal del Contribuyente (ITIN).",
         process_second_title: "Cumplimiento Fiscal: ",
         process_second: "Aseguramos el cumplimiento de tus obligaciones fiscales.",
-        url: "/solicitud-itin"
+        url: "service-details/solicitud-itin"
     },
     {
         title: "Servicios de realtor",
@@ -79,7 +80,7 @@ const item = [
         process_first: "Te asesoramos en la compra, venta y alquiler de propiedades.",
         process_second_title: "Asesoría Personalizada: ",
         process_second: "Encontramos la mejor opción inmobiliaria según tus necesidades y presupuesto.",
-        url: "/realtor"
+        url: "service-details/realtor"
     }
 ];
 
@@ -116,22 +117,26 @@ export default function Work__Process(){
                 className={styles.mySwiper}
             >
                 {item.map((item, index) => (
+                    
                     <SwiperSlide className={styles.swiper__slide} key={index}>
-                       <div className={styles.backgrond__container}></div>
-                        <div className={styles.card__container}>
-                            <div className={styles.header}>
-                                <Card.Text className={styles.card__title}>{'<Liurka Fiscal Consultancy>'}</Card.Text>
-                                <Card.Title className={styles.card__subtitle}>{item.title}</Card.Title>
+                        <Link to={item.url} className={styles.link}>
+                       ` <div className={styles.backgrond__container}></div>
+                            <div className={styles.card__container}>
+                                <div className={styles.header}>
+                                    <Card.Text className={styles.card__title}>{'<Liurka Fiscal Consultancy>'}</Card.Text>
+                                    <Card.Title className={styles.card__subtitle}>{item.title}</Card.Title>
+                                </div>
+                                <Card className={styles.sub__card__container}>
+                                    <Card.Body>
+                                        <Card.Title className={styles.important_text}>{item.process_first_title}<p className={styles.text}>{item.process_first}</p></Card.Title>
+                                        <Card.Title className={styles.important_text}>{item.process_second_title}<p className={styles.text}>{item.process_second}</p></Card.Title>
+                                    </Card.Body>
+                                </Card>
+                                
                             </div>
-                            <Card className={styles.sub__card__container}>
-                                <Card.Body>
-                                    <Card.Title className={styles.important_text}>{item.process_first_title}<p className={styles.text}>{item.process_first}</p></Card.Title>
-                                    <Card.Title className={styles.important_text}>{item.process_second_title}<p className={styles.text}>{item.process_second}</p></Card.Title>
-                                </Card.Body>
-                            </Card>
-                            <Button variant="primary" href={item.url} className={styles.more_info_button}>Más información</Button>
-                        </div>
+                        </Link>
                     </SwiperSlide>
+                    
                 ))}
             </Swiper>
 

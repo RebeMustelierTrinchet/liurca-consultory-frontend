@@ -15,7 +15,8 @@ export default function Hero_Section(){
                 <img className={styles.logo_image} src={logo} alt={"Liurka Liurka Consultoría Fiscal Logo"} />
             </div>
             <div>
-                <button className={styles.btn_contac_us}>Contactanos</button>
+                
+                <a href="/contact" className={styles.link}><button className={styles.btn_contac_us}>Contactanos</button></a>
             </div>
         </div>
     )
