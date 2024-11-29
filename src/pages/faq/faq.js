@@ -5,7 +5,8 @@ import Accordion from "react-bootstrap/Accordion";
 const ITEMS = [
   {
     title: "¿Qué servicios ofrecen?",
-    body: "Ofrecemos consultoría fiscal y legal personalizada, incluyendo planificación fiscal, asesoramiento legal y representación en asuntos fiscales y legales."
+    body: "Ofrecemos consultoría fiscal personalizada, incluyendo planificación fiscal y representación en asuntos relacionados con impuestos."
+
   },
   {
     title: "¿Cómo puedo agendar una cita?",

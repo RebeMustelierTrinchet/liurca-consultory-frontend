@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from "./layout.module.css";
 import NavBar from '../../components/navbar/navbar';
 import Footer from '../../components/footer/footer';
+import Chatbot from '../../components/chatbot/chatbot';
 
 export default function Layout({children}){
     
@@ -12,6 +13,7 @@ export default function Layout({children}){
             <div className={styles.conteiner}>
                 {children}
             </div>
+            <Chatbot/>
             <Footer />
         </div>
     )
